@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+
+  <span><a class="navbar-brand" href="#">OrganicFruits.com</a></span>
+  <span class="example-spacer"></span>
+  <button *ngIf="! isLoggedIn()" mat-flat-button color="primary" routerLink="/login">Login</button>
+  <button *ngIf="isLoggedIn()" mat-flat-button color="primary" (click)="logout()">Logout</button>
+
+</mat-toolbar>
+<mat-toolbar  *ngIf="isLoggedIn()"color="primary">
+  <button mat-flat-button color="primary" routerLink="/">Home</button>
+  <button mat-flat-button color="primary" routerLink="/addNewProduct"*ngIf="isAdmin()" >Add New product</button>
+</mat-toolbar>

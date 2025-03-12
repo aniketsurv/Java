@@ -1,0 +1,11 @@
+div{
+
+    background: #000;
+    width: fit-content;
+    
+}
+::ng-deep input.mat-input-element {
+    color:white;
+  }
+  
+  
